@@ -58,6 +58,9 @@ public class NewsPager extends BasePager {
         ib_next_item.setVisibility(View.GONE);
 
         System.out.print("git测试!!!!!");
+        System.out.print("git测试!!!!!");
+        System.out.print("git测试!!!!!");
+        System.out.print("git测试!!!!!");
 
         return view;
     }
