@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginRight="5dp"
+        android:id="@+id/iv_news_icon"
+        android:scaleType="fitXY"
+        android:background="#9000"
+        android:padding="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/news_pic_default"/>
+
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:maxLines="2"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/iv_news_icon"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingTop="5dp"
+        android:id="@+id/tv_news_date"
+        android:maxLines="2"
+        android:textColor="#9000"
+        android:layout_toRightOf="@id/iv_news_icon"
+        android:layout_below="@id/tv_news_title"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017年xx月xx日 xx时xx分"/>
+
+
+</RelativeLayout>

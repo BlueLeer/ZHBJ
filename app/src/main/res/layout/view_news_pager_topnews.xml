@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--要将此布局设置给ListView的头(HeadView),要将此布局外部嵌套一层ViewGroup-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <com.example.leer.zhbj.widget.NewsTabViewPager
+            android:id="@+id/vp_news_details_topnews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.example.leer.zhbj.widget.NewsTabViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="#88000000">
+
+            <TextView
+                android:id="@+id/tv_topnews_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"/>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/circle_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:fillColor="#FF0000"
+                app:pageColor="#FF888888"
+                app:radius="3dp"
+                app:strokeWidth="0dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
